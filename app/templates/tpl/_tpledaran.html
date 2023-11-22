@@ -1,0 +1,47 @@
+<style>
+    .finp {
+        width: 707px;
+        height: 30px;
+    }
+    .subm {
+        width: 150px; 
+        margin-top:5px;
+    }
+</style>
+<form action="", method="post">
+    {{ form.hidden_tag() }}
+    <button style="width: 150px; margin-top:10px;">Program Study</button>  
+        <!-- <input style="width: 707px; height:30px;"> <br> -->
+        {{ form.program_studi(class="finp", placeholder="Program Study") }} <br>
+    <button style="width: 150px; margin-top:5px" >Fakultas</button> 
+        {{ form.fakultas(class="finp", placeholder="Fakultas") }} <br> 
+    <button style="width: 150px; margin-top:5px">Kontak</button> 
+        {{ form.kontak(class="finp", placeholder="Kontak") }} <br> 
+    <button style="width: 150px; margin-top:5px">No.Surat</button> 
+        {{ form.nosurat(class="finp", placeholder="No. Surat") }} <br> 
+    <button style="width: 150px; margin-top:5px">Lampiran</button> 
+        {{ form.lampiran(class="finp", placeholder="Lampiran") }} <br> 
+    <button style="width: 150px; margin-top:5px">Hal</button> 
+        {{ form.hal(class="finp", placeholder="hal") }} <br> 
+    <button style="width: 150px; margin-top:5px">Kepada</button> 
+        {{ form.kepada(class="finp", placeholder="Kepada") }} <br> 
+    <button style="width: 150px; margin-top:5px">Tempat</button> 
+        {{ form.tempat(class="finp", placeholder="tempat") }} <br> 
+    <button style="width: 150px; margin-top:5px">Isi</button> 
+        {{ form.isi(class="finp", placeholder="isi") }} <br>
+    <button style="width: 150px; margin-top:5px">Penutup</button> 
+        {{ form.penutup(class="finp", placeholder="penutup") }} <br> 
+    <button style="width: 150px; margin-top:5px">Lokasi</button> 
+        {{ form.lokasi(class="finp", placeholder="lokasi") }} <br> 
+    <button style="width: 150px; margin-top:5px">Date</button> 
+        {{ form.date(class="finp", placeholder="date") }} <br> 
+    <button style="width: 150px; margin-top:5px">Ketua Program</button> 
+        {{ form.ketua_program(class="finp", placeholder="ketua_program") }} <br> 
+    <button style="width: 150px; margin-top:5px">TTD</button> 
+        {{ form.ttd(class="finp", placeholder="ttd") }} <br> 
+    <button style="width: 150px; margin-top:5px">Nama Pimpinan</button> 
+        {{ form.nama_ketua(class="finp", placeholder="nama_pimpinan") }} <br> 
+    <button style="width: 150px; margin-top:5px">NIDN</button> 
+        {{ form.nidn(class="finp", placeholder="NIDN") }} <br> 
+        {{ form.submit() }}        
+</form> 
