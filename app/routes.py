@@ -91,6 +91,6 @@ def suratkeluararsip ():
     daftar_surat = Surat.query.all()
     return render_template("suratkeluararsip.html", daftar_surat=daftar_surat)
 
-@app.route("/download/<filename>")
+@app.route("/download/<filename>", methods=['GET'])
 def download(filename):
-    return send_file(filename, as_attachment=True, download_name="surat.docx")
+    return send_file(f"static/docxhasil/{filename}", as_attachment=True, download_name=filename)
